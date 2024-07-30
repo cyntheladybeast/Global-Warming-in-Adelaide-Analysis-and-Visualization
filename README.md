@@ -45,7 +45,7 @@ library(readr) # for reading and parsing data from CSV files.
 library(moments) # for calculating statistical moments, such as skewness and kurtosis.
 library(ggplot2) #  for creating data visualizations.
 
-### Function to calculate and present descriptive statistics
+## Function to calculate and present descriptive statistics
 calculate_descriptive_stats <- function(data, year, month) {
   subset_data <- data %>% 
     filter(Year == year, Month == month) # filters the data to create a subset of the data, filtered data is stored in 'subset_data'
